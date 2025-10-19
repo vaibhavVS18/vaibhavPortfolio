@@ -63,7 +63,7 @@ const Header = () => {
         </a>
 
         <a
-          href="https://www.instagram.com/vaibhav.vs.18/"
+          href="#"
           target="_blank"
           aria-label="Instagram"
         >
