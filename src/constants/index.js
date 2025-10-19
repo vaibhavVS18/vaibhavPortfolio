@@ -1,7 +1,6 @@
-import project1 from "../assets/projects/react1.svg";
-import project2 from "../assets/projects/react2.svg";
-import project3 from "../assets/projects/react3.svg";
-import project4 from "../assets/projects/react4.svg";
+import codchatLogo from "../assets/projects/codchatLogo.png";
+import truesellerLogo from "../assets/projects/truesellerLogo.png";
+
 
 
 
@@ -29,20 +28,15 @@ export const EXPERIENCES = [
 
 // Your projects
 export const PROJECTS = [
-  // {
-  //   title: "Filespire - File Sharing Platform",
-  //   image: project1,
-  //   description:
-  //     "A platform for uploading and sharing files securely with features like link sharing, QR code generation, and email-based sharing.",
-  //   technologies: ["React", "Node.js", "MongoDB", "Firebase", "Express"],
-  // },
-  // {
-  //   title: "Auto Reload NPM Package",
-  //   image: project2, // Replace with custom image if available
-  //   description:
-  //     "An npm package that automatically reloads a rendered website every 15 minutes to prevent the deployed site from going down.",
-  //   technologies: ["Node.js", "JavaScript", "npm"],
-  // },
+  {
+    title: "CodChat – Real-time Project Collaboration Platform",
+    image: codchatLogo,
+    description:
+      "CodChat is a real-time collaborative platform for developers to work together on projects. Users can create project rooms, add collaborators, and chat instantly while coding. CodChat integrates AI assistance directly into the chat, helping developers solve problems, generate code, and debug without leaving the discussion. Built to improve team programming and remote collaboration.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "JWT", "OpenAI API"],
+    link: "https://cod-chat-nine.vercel.app/"
+  },
+
   // {
   //   title: "Portfolio Website",
   //   image: project3,
@@ -50,13 +44,15 @@ export const PROJECTS = [
   //     "Personal portfolio website showcasing my projects, skills, and contact information.",
   //   technologies: ["React", "Next.js", "TailwindCSS", "JavaScript"],
   // },
-  // {
-  //   title: "Word to PDF Converter",
-  //   image: project4,
-  //   description:
-  //     "A simple web tool to convert Word documents into PDF, integrated into Filespire for seamless user experience.",
-  //   technologies: ["React", "Node.js", "Express", "JavaScript"],
-  // },
+  {
+    title: "TrueSeller – Connecting Local Sellers to Online Buyers",
+    image: truesellerLogo,
+    description:
+      "A MERN-based platform to help local shopkeepers sell their products online easily without any technical skills. Shop owners can register, add their shop details, upload products with images and prices, and sell across India. Buyers can explore local products from different states, order with home delivery, and choose Cash on Delivery or online payment options.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "JWT Auth", "Cloudinary"],
+    link: "https://trueseller.vercel.app/"
+  }
+
 ];
 
 // Contact section - empty for privacy

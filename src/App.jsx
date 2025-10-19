@@ -18,8 +18,8 @@ function App() {
       <div className="container mx-auto px-8">
         <Header />
         <Hero />
-        <Technology/>
         <Project/>
+        <Technology/>
         <Contact/>
         <Footer/>
       </div>
