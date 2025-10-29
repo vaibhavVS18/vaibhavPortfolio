@@ -1,6 +1,7 @@
 import codchatLogo from "../assets/projects/codchatLogo.png";
 import truesellerLogo from "../assets/projects/truesellerLogo.png";
-
+import justscanLogo from "../assets/projects/JustScanLogo1.png"
+import logo from "../assets/logo.png"
 
 
 
@@ -29,29 +30,37 @@ export const EXPERIENCES = [
 // Your projects
 export const PROJECTS = [
   {
-    title: "CodChat – Real-time Project Collaboration Platform",
-    image: codchatLogo,
-    description:
-      "CodChat is a real-time collaborative platform for developers to work together on projects. Users can create project rooms, add collaborators, and chat instantly while coding. CodChat integrates AI assistance directly into the chat, helping developers solve problems, generate code, and debug without leaving the discussion. Built to improve team programming and remote collaboration.",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "JWT", "OpenAI API"],
-    link: "https://cod-chat-nine.vercel.app/"
-  },
-
-  // {
-  //   title: "Portfolio Website",
-  //   image: project3,
-  //   description:
-  //     "Personal portfolio website showcasing my projects, skills, and contact information.",
-  //   technologies: ["React", "Next.js", "TailwindCSS", "JavaScript"],
-  // },
-  {
     title: "TrueSeller – Connecting Local Sellers to Online Buyers",
     image: truesellerLogo,
     description:
       "A MERN-based platform to help local shopkeepers sell their products online easily without any technical skills. Shop owners can register, add their shop details, upload products with images and prices, and sell across India. Buyers can explore local products from different states, order with home delivery, and choose Cash on Delivery or online payment options.",
     technologies: ["React", "Node.js", "Express", "MongoDB", "JWT Auth", "Cloudinary"],
     link: "https://trueseller.vercel.app/"
-  }
+  },
+  {
+    title: "CodChat – Real-time Project Collaboration Platform",
+    image: codchatLogo,
+    description:
+      "CodChat is a real-time collaborative platform for developers to work together on projects. Users can create project rooms, add collaborators, and chat instantly while coding. CodChat integrates AI assistance directly into the chat, helping developers solve problems, generate code, and debug without leaving the discussion.It improves team programming and collaboration.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "JWT", "OpenAI API"],
+    link: "https://cod-chat-nine.vercel.app/"
+  },
+  {
+    title: "JustScan – Smart Entry Management System",
+    image: justscanLogo,
+    description:
+      "Entry Management System that automatically scans ID cards at the gate. Verify identities quickly and accurately. It automatically handles entries by filling information like mobile no., name, hostel name, arrival and departure time etc. ID-Based Entry Management System uses Tesseract OCR to scan and extract details from ID cards.",
+    technologies: ["Node.js", "Express.js", "MongoDB Atlas", "Tesseract.js", "Passport.js (Google OAuth)", "EJS", "Bootstrap"],
+    link: "/justScan"
+  },
+
+  {
+    title: "My Portfolio",
+    image: logo,
+    description:
+      "It is Personal portfolio website showcasing my projects, skills, and contact information.",
+    technologies: ["React", "TailwindCSS", "JavaScript"],
+  },
 
 ];
 

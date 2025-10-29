@@ -60,7 +60,6 @@ const Technology = () => {
       name: "JavaScript",
       icon: <SiJavascript className="text-7xl text-yellow-300" />,
     },
-    { name: "Java", icon: <FaJava className="text-7xl text-red-500" /> },
     { name: "HTML5", icon: <FaHtml5 className="text-7xl text-orange-500" /> },
     { name: "CSS3", icon: <FaCss3Alt className="text-7xl text-blue-500" /> },
     { name: "Vite", icon: <SiVite className="text-7xl text-purple-500" /> },

@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate ,Link} from "react-router-dom";
 import { PROJECTS } from "../constants/";
 
 const Project = () => {
+  // const navigate = useNavigate();
+
   return (
     <div className="pb-4">
       <h2 className="my-20 text-center text-4xl font-semibold">
@@ -31,7 +34,6 @@ const Project = () => {
 
               <Description text={project.description} link={project.link} />
 
-
               {/* Technologies */}
               <div className="flex flex-wrap mt-2">
                 {project.technologies.map((tech, techIndex) => (
@@ -47,14 +49,27 @@ const Project = () => {
               
             {/* See Project Link */}
             <div className="mt-2">
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-emerald-600 hover:underline"
-              >
-                See Project
-              </a>
+              {
+                project.link !== "/justScan" ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-emerald-600 hover:underline"
+                  >
+                    See Project
+                  </a>
+                ):
+                (
+                  <Link
+                    to={`${project.link}`}
+                    className="text-emerald-600 hover:underline"
+                  >
+                    See Project
+                  </Link>
+                )
+              }
+
             </div>
 
             </div>
