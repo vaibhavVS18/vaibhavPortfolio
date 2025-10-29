@@ -41,7 +41,7 @@ const Hero = () => {
         <div className="w-full lg:w-1/2">
           <div className="flex justify-center lg:p-8">
             <motion.div
-              className="relative bg-gradient-to-br from-black/20 to-[#291459]/30 backdrop-blur-md border border-white/20 rounded-3xl p-12 w-96 h-[500px] overflow-hidden flex flex-col items-center justify-center text-center"
+              className="relative bg-gradient-to-br from-black/20 to-[#291459]/30 backdrop-blur-md border border-white/50 rounded-3xl p-12 w-96 h-[500px] overflow-hidden flex flex-col items-center justify-center text-center"
               initial={{ scale: 0.8, opacity: 0, rotateY: -15 }}
               animate={{ scale: 1, opacity: 1, rotateY: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
