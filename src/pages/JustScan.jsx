@@ -40,7 +40,7 @@ const JustScan = () => {
             {project.link && (
                 <div className="flex justify-center">
                 <a
-                    href={project.link}
+                    href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-400 underline text-lg font-medium hover:text-blue-300"

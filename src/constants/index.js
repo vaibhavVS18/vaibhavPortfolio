@@ -51,7 +51,8 @@ export const PROJECTS = [
     description:
       "Entry Management System that automatically scans ID cards at the gate. Verify identities quickly and accurately. It automatically handles entries by filling information like mobile no., name, hostel name, arrival and departure time etc. ID-Based Entry Management System uses Tesseract OCR to scan and extract details from ID cards.",
     technologies: ["Node.js", "Express.js", "MongoDB Atlas", "Tesseract.js", "Passport.js (Google OAuth)", "EJS", "Bootstrap"],
-    link: "/justScan"
+    link: "/justScan",
+    githubLink: "https://github.com/vaibhavVS18/IdScan"
   },
 
   {

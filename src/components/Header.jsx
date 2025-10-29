@@ -11,7 +11,7 @@ import logo from "../assets/logo.png";
 
 const Header = () => {
   return (
-    <nav className="flex items-center justify-between py-6">
+    <nav className="flex items-center justify-between py-">
 
 
 <motion.div className="relative flex flex-shrink-0 items-center">

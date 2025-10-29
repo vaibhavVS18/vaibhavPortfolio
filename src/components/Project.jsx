@@ -19,13 +19,28 @@ const Project = () => {
           >
             {/* Project Image */}
             <div className="w-full lg:w-1/4">
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="mb-6 rounded shadow-lg sm:w-50 w-44 hover:scale-105 transition-transform duration-300"
-                />
-              </a>
+              {project.link !== "/justScan" ? (
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="mb-6 rounded shadow-lg sm:w-50 w-44 hover:scale-105 transition-transform duration-300"
+                  />
+                </a>
+              ):
+              (
+                <Link 
+                  to={`${project.link}`}
+                >
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="mb-6 rounded shadow-lg sm:w-50 w-44 hover:scale-105 transition-transform duration-300"
+                  />
+                </Link>
+              )
+              }
+
             </div>
 
             {/* Project Details */}
