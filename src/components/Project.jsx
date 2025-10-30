@@ -6,8 +6,8 @@ const Project = () => {
   // const navigate = useNavigate();
 
   return (
-    <div className="pb-4">
-      <h2 className="my-20 text-center text-4xl font-semibold">
+    <div className="pb-4 border-t">
+      <h2 className="my-10 text-center text-4xl font-semibold">
         Projects
       </h2>
 

@@ -72,7 +72,7 @@ const Technology = () => {
   ];
 
   return (
-    <div className="pb-24">
+    <div className="pb-24 border-t">
         <motion.h2
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: -100 }}

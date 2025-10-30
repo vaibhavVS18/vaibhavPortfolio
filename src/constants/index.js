@@ -2,8 +2,8 @@ import codchatLogo from "../assets/projects/codchatLogo.png";
 import truesellerLogo from "../assets/projects/truesellerLogo.png";
 import justscanLogo from "../assets/projects/JustScanLogo1.png"
 import logo from "../assets/logo.png"
-
-
+import yesCityLogo from "../assets/projects/yesCityLogo.png"
+import yesLogo from "../assets/projects/yesLogo.png"
 
 // Hero section about you
 export const HERO_CONTENT = `I’m Vaibhav Sharma, a full stack developer driven by a passion for building impactful digital products. With strong experience in React, Next.js, and Tailwind CSS on the front end, and Node.js, Express, MongoDB, and MySQL on the back end, I focus on creating fast, scalable, and user-friendly applications. My approach blends clean design, efficient code, and modern development practices to deliver seamless solutions for real-world challenges.`;
@@ -12,19 +12,50 @@ export const HERO_CONTENT = `I’m Vaibhav Sharma, a full stack developer driven
 // Your work experiences
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Full Stack Developer",
-    company: "Freelance / Personal Projects",
-    description: `Developed full-stack web applications using React, Next.js, and Node.js. Implemented REST APIs, user authentication, and database management with MongoDB and MySQL. Worked on responsive UI and optimized web performance.`,
-    technologies: ["JavaScript", "React", "Next.js", "Node.js", "MongoDB", "MySQL"],
+    title: "YesCity 3.0 – Travel Assistance Platform",
+    year: "2025 - Present",
+    image: yesLogo,
+    role: "Full Stack Developer / Tech Lead",
+    company: "YesCity",
+    description: `Leading the development of YesCity 3.0 — a platform that helps users discover city-specific activities, famous foods, and accommodations to enhance travel comfort. 
+    Worked on both the frontend and backend (mainly focused on backend) using Next.js 13+ App Router with API routes and MongoDB. 
+    Implemented secure user authentication using Firebase (OTP-based login), JWT tokens, and cookies for session handling. 
+    Merged a RAG-based chatbot for personalized responses and built real-time features like group chat (Connect) and one-to-one chat (BuddyConnect) using Pusher. 
+    Designed the Contribution section and currently manage the tech team, assigning tasks and overseeing feature implementation.`,
+    technologies: [
+      "Next.js",
+      "MongoDB",
+      "Firebase Authentication",
+      "JWT",
+      "Cookies",
+      "Pusher",
+      "React",
+      "Tailwind CSS"
+    ],
+    link: "https://yescity.in", // update with actual URL if hosted
+    certificate: ""
   },
+
   {
-    year: "2021 - 2023",
-    role: "Frontend Developer",
-    company: "Freelance / Open Source Contributions",
-    description: `Designed and built interactive user interfaces using React and Next.js. Collaborated with backend developers to integrate APIs. Improved accessibility, responsiveness, and website performance.`,
-    technologies: ["React", "Next.js", "HTML", "CSS", "TailwindCSS"],
-  },
+    title: "YesCity Analytics Dashboard",
+    year: "2025",
+    image: yesCityLogo,
+    role: "Full Stack Developer",
+    company: "YesCity",
+    description: `Built YesCity’s internal analytics dashboard using Next.js 13+ App Router and MongoDB. 
+    Developed custom API routes to track user interactions such as clicks on cities, categories, and individual cards, along with precise timestamps for performance monitoring. 
+    Designed a responsive and visually clear dashboard to display engagement data, helping the marketing team make informed, data-driven decisions for ad campaigns and feature improvements.`,
+    technologies: [
+      "Next.js 13+ (App Router)",
+      "MongoDB",
+      "React",
+      // "Chart.js",
+      "Tailwind CSS"
+    ],
+    link: "", // add if hosted
+    certificate: ""
+  }
+
 ];
 
 // Your projects

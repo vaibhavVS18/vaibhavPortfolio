@@ -27,7 +27,7 @@ const Contact = ()=>{
     };
 
     return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 border-t">
       <motion.div
         className="max-w-3xl mx-auto text-center"
         initial={{ opacity: 0, y: 50 }}
@@ -72,7 +72,7 @@ const Contact = ()=>{
 
           <motion.button
             type="submit"
-            whileHover={{ scale: 1.05, backgroundColor: "#f87171" }}
+            whileHover={{ scale: 1.05, backgroundColor: "#3512b4ff" }}
             whileTap={{ scale: 0.95 }}
             className="w-full py-3 rounded-lg border text-white font-semibold transition-colors"
           >
