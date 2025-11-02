@@ -7,12 +7,12 @@ import Experience from "../components/Experience";
 
 export default function Home() {
   return (
-    <>
+    <div className="mt-20">
       <Hero />
       <Experience/>
       <Project />
       <Technology />
       <Contact />
-    </>
+    </div>
   );
 }

@@ -27,7 +27,7 @@ const Contact = ()=>{
     };
 
     return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 border-t">
+    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 border-t scroll-mt">
       <motion.div
         className="max-w-3xl mx-auto text-center"
         initial={{ opacity: 0, y: 50 }}
@@ -35,7 +35,7 @@ const Contact = ()=>{
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-4xl font-bold text-white mb-10">Contact Me</h2>
+        <h2 className="text-4xl font-bold text-white mb-5">Contact Me</h2>
 
         <motion.form
           ref={form}

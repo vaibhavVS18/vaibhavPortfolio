@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { useNavigate ,Link} from "react-router-dom";
 import { PROJECTS } from "../constants/";
+import {FiExternalLink} from "react-icons/fi";
+import {FaGithub} from "react-icons/fa";
 
 const Project = () => {
   // const navigate = useNavigate();
 
   return (
-    <div className="pb-4 border-t">
+    <div className="pb-4 border-t scroll-mt-18" id="projects">
       <h2 className="my-10 text-center text-4xl font-semibold">
         Projects
       </h2>
@@ -18,13 +20,13 @@ const Project = () => {
             className="mb-5 flex flex-wrap lg:justify-center items-center p-4 shadow-lg hover:shadow-2xl transition-shadow duration-300 rounded-lg"
           >
             {/* Project Image */}
-            <div className="w-full lg:w-1/4">
+            <div className="flex justify-center items-center w-full lg:w-1/4">
               {project.link !== "/justScan" ? (
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="mb-6 rounded shadow-lg sm:w-50 w-44 hover:scale-105 transition-transform duration-300"
+                    className="mb-6 rounded shadow-lg sm:w-45 w-30 hover:scale-105 transition-transform duration-300"
                   />
                 </a>
               ):
@@ -47,6 +49,39 @@ const Project = () => {
             <div className="w-full max-w-xl lg:w-3/4">
               <h3 className="mb-2 text-2xl font-semibold">{project.title}</h3>
 
+              {project.link && (
+                <div className="flex justify-center">
+                  {
+                  project.link !== "/justScan" ? (
+                    <div className="flex gap-1 items-center justify-center">
+                      <FiExternalLink/>
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-purple-400 hover:text-purple-300 hover:underline"
+                      >
+                        View Project
+                      </a>
+                    </div>
+
+                  ):
+                  (
+                  <div className="flex gap-1 items-center justify-center">
+                  <FiExternalLink/>
+                    <Link
+                      to={`${project.link}`}
+                      className="text-purple-400 hover:text-purple-300 hover:underline"
+                    >
+                      View Project
+                    </Link>
+                  </div>
+                  )
+                }
+                </div>
+              )}
+
+
               <Description text={project.description} link={project.link} />
 
               {/* Technologies */}
@@ -63,27 +98,22 @@ const Project = () => {
 
               
             {/* See Project Link */}
-            <div className="mt-2">
-              {
-                project.link !== "/justScan" ? (
+            <div className="flex justify-between sm: mt-2">
+
+
+              {project.githubLink && (
+                <div className="flex gap-1 items-center justify-center">
+                <FaGithub/>
                   <a
-                    href={project.link}
+                    href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-emerald-600 hover:underline"
+                    className="text-purple-400 hover:text-purple-300 hover:underline"
                   >
-                    See Project
+                    GitHub Repository
                   </a>
-                ):
-                (
-                  <Link
-                    to={`${project.link}`}
-                    className="text-emerald-600 hover:underline"
-                  >
-                    See Project
-                  </Link>
-                )
-              }
+                </div>
+              )}
 
             </div>
 

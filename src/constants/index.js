@@ -8,24 +8,50 @@ import yesLogo from "../assets/projects/yesLogo.png"
 // Hero section about you
 export const HERO_CONTENT = `I’m Vaibhav Sharma, a full stack developer driven by a passion for building impactful digital products. With strong experience in React, Next.js, and Tailwind CSS on the front end, and Node.js, Express, MongoDB, and MySQL on the back end, I focus on creating fast, scalable, and user-friendly applications. My approach blends clean design, efficient code, and modern development practices to deliver seamless solutions for real-world challenges.`;
 
+//    //  work experiences 
+// export const EXPERIENCES = [
+//   {
+//     title: "YesCity – Travel Assistance Platform",
+//     year: "2025 - Present",
+//     image: yesLogo,
+//     role: "Full-Stack Intern → Now Leading Tech Team",
+//     company: "YesCity",
+//     description: `Started as a two-month Full-Stack Intern and now leading the development of YesCity — a platform that helps users discover city-specific activities, foods, and accommodations to enhance travel comfort. 
+//     Worked on both frontend and backend (primarily backend) using Next.js 13+ App Router with custom API routes and MongoDB. 
+//     Implemented secure user authentication using Firebase (OTP-based login), JWT tokens, and cookies for session handling. 
+//     Integrated a RAG-based chatbot for personalized travel responses and real-time features such as group chat (Connect) and one-to-one chat (BuddyConnect) using Pusher. 
+//     Additionally, built YesCity’s internal Analytics Dashboard using Next.js and MongoDB to monitor user interactions (clicks, category views, and engagement timelines) — helping the marketing team make data-driven decisions. 
+//     Currently managing the tech team, assigning tasks, reviewing pull requests, and ensuring scalable, clean architecture.`,
+//     technologies: [
+//       "Next.js 13+ (App Router)",
+//       "MongoDB",
+//       "Firebase Authentication",
+//       "JWT",
+//       "Cookies",
+//       "Pusher",
+//       "React",
+//       "Tailwind CSS"
+//     ],
+//     link: "https://yescity.in",
+//     certificate: ""
+//   }
+// ];
+
 
 // Your work experiences
 export const EXPERIENCES = [
   {
-    title: "YesCity 3.0 – Travel Assistance Platform",
+    title: "YesCity – Travel Assistance Platform",
     year: "2025 - Present",
     image: yesLogo,
-    role: "Full Stack Developer / Tech Lead",
+    role: "FullStack Intern → Now Leading Tech Team",
     company: "YesCity",
-    description: `Leading the development of YesCity 3.0 — a platform that helps users discover city-specific activities, famous foods, and accommodations to enhance travel comfort. 
-    Worked on both the frontend and backend (mainly focused on backend) using Next.js 13+ App Router with API routes and MongoDB. 
-    Implemented secure user authentication using Firebase (OTP-based login), JWT tokens, and cookies for session handling. 
-    Merged a RAG-based chatbot for personalized responses and built real-time features like group chat (Connect) and one-to-one chat (BuddyConnect) using Pusher. 
-    Designed the Contribution section and currently manage the tech team, assigning tasks and overseeing feature implementation.`,
+    description: `Started as a two-month Full-Stack Intern and now leading the development of YesCity — a platform that helps users discover city-specific activities, famous foods, and accommodations to enhance travel comfort.
+    Worked on both the frontend and backend (primarily focused on backend) using Next.js 13+ App Router with custom API routes and MongoDB. Implemented secure user authentication using Firebase (OTP-based login), JWT tokens, and cookies for session handling. Integrated a RAG-based chatbot for personalized responses and developed real-time features such as group chat (Connect) and one-to-one chat (BuddyConnect) using Pusher. Designed the Contribution section and currently manage the tech team, assigning tasks and overseeing feature implementation.`,
     technologies: [
       "Next.js",
       "MongoDB",
-      "Firebase Authentication",
+      "Firebase",
       "JWT",
       "Cookies",
       "Pusher",
@@ -33,11 +59,11 @@ export const EXPERIENCES = [
       "Tailwind CSS"
     ],
     link: "https://yescity.in", // update with actual URL if hosted
-    certificate: ""
+    certificate: "https://drive.google.com/file/d/16e2rc6ydGqAnH8poiLQQMn1IDoXLTV3L/view?usp=sharing"
   },
 
   {
-    title: "YesCity Analytics Dashboard",
+    title: "YesCity Analytics Dashboard (Admin side)",
     year: "2025",
     image: yesCityLogo,
     role: "Full Stack Developer",
@@ -46,14 +72,14 @@ export const EXPERIENCES = [
     Developed custom API routes to track user interactions such as clicks on cities, categories, and individual cards, along with precise timestamps for performance monitoring. 
     Designed a responsive and visually clear dashboard to display engagement data, helping the marketing team make informed, data-driven decisions for ad campaigns and feature improvements.`,
     technologies: [
-      "Next.js 13+ (App Router)",
+      "Next.js",
       "MongoDB",
       "React",
       // "Chart.js",
       "Tailwind CSS"
     ],
     link: "", // add if hosted
-    certificate: ""
+    certificate: "https://drive.google.com/file/d/16e2rc6ydGqAnH8poiLQQMn1IDoXLTV3L/view?usp=sharing"
   }
 
 ];
@@ -66,7 +92,9 @@ export const PROJECTS = [
     description:
       "A MERN-based platform to help local shopkeepers sell their products online easily without any technical skills. Shop owners can register, add their shop details, upload products with images and prices, and sell across India. Buyers can explore local products from different states, order with home delivery, and choose Cash on Delivery or online payment options.",
     technologies: ["React", "Node.js", "Express", "MongoDB", "JWT Auth", "Cloudinary"],
-    link: "https://trueseller.vercel.app/"
+    link: "https://trueseller.vercel.app/",
+    githubLink: "https://github.com/vaibhavVS18/TrueSeller"
+
   },
   {
     title: "CodChat – Real-time Project Collaboration Platform",
@@ -74,10 +102,12 @@ export const PROJECTS = [
     description:
       "CodChat is a real-time collaborative platform for developers to work together on projects. Users can create project rooms, add collaborators, and chat instantly while coding. CodChat integrates AI assistance directly into the chat, helping developers solve problems, generate code, and debug without leaving the discussion.It improves team programming and collaboration.",
     technologies: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "JWT", "OpenAI API"],
-    link: "https://cod-chat-nine.vercel.app/"
+    link: "https://cod-chat-nine.vercel.app/",
+    githubLink: "https://github.com/vaibhavVS18/CodChat"
+
   },
   {
-    title: "JustScan – Smart Entry Management System",
+    title: "JustScan – Smart Entry Management System - IIIT Una",
     image: justscanLogo,
     description:
       "Entry Management System that automatically scans ID cards at the gate. Verify identities quickly and accurately. It automatically handles entries by filling information like mobile no., name, hostel name, arrival and departure time etc. ID-Based Entry Management System uses Tesseract OCR to scan and extract details from ID cards.",
@@ -92,6 +122,7 @@ export const PROJECTS = [
     description:
       "It is Personal portfolio website showcasing my projects, skills, and contact information.",
     technologies: ["React", "TailwindCSS", "JavaScript"],
+    githubLink: "https://github.com/vaibhavVS18/vaibhavPortfolio"
   },
 
 ];

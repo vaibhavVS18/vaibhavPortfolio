@@ -113,7 +113,7 @@ const Hero = () => {
             <motion.span
               variants={childVariants}
               className="bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-500 bg-clip-text 
-                        text-lg sm:text-xl md:text-2xl lg:text-3xl 
+                        text-center text-lg sm:text-xl md:text-2xl lg:text-3xl 
                         tracking-tight text-transparent"
             >
               C++ / DSA Enthusiast • Full Stack Developer

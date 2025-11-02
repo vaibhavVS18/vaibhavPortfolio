@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { EXPERIENCES } from "../constants/";
+import {FiExternalLink} from "react-icons/fi";
 
 const Experience = () => {
   return (
-    <div className="pb-4 border-t">
+    <div className="pb-4 border-t scroll-mt-18" id="experiences">
       <h2 className="my-10 text-center text-4xl font-semibold">Experiences</h2>
 
       <div>
@@ -20,7 +21,7 @@ const Experience = () => {
                   <img
                     src={exp.image}
                     alt={exp.title}
-                    className="mb-6 rounded shadow-lg sm:w-50 w-44 hover:scale-105 transition-transform duration-300"
+                    className="mb-6 rounded shadow-lg sm:w-45 w-30 hover:scale-105 transition-transform duration-300"
                   />
                 </a>
               ) : (
@@ -37,7 +38,7 @@ const Experience = () => {
               <h3 className="mb-1 text-2xl font-semibold">{exp.title}</h3>
               <p className="text-stone-400 mb-2 italic">{exp.year}</p>
               <p className="font-medium mb-2">
-                {exp.role} — <span className="text-emerald-500">{exp.company}</span>
+                {exp.role} — <span className="text-gray-100">{exp.company}</span>
               </p>
 
               <Description text={exp.description} />
@@ -56,26 +57,33 @@ const Experience = () => {
 
               {/* Links */}
               <div className="mt-3 flex flex-wrap gap-4">
-                {exp.link && (
-                  <a
-                    href={exp.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-emerald-600 hover:underline"
-                  >
-                    View Project
-                  </a>
-                )}
 
                 {exp.certificate && (
-                  <a
-                    href={exp.certificate}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 hover:underline"
-                  >
-                    View Certificate
-                  </a>
+                  <div className="flex gap-1 items-center justify-center">
+                  <FiExternalLink/>
+                    <a
+                      href={exp.certificate}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-purple-400 hover:text-purple-300 hover:underline"
+                    >
+                      Completion Certificate
+                    </a>
+                  </div>
+                )}
+
+                {exp.link && (
+                  <div className="flex gap-1 items-center justify-center">
+                  <FiExternalLink/>
+                    <a
+                      href={exp.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 hover:underline"
+                    >
+                      View Website
+                    </a>
+                  </div>
                 )}
               </div>
             </div>
