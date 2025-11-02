@@ -52,6 +52,7 @@ export const EXPERIENCES = [
       "Next.js",
       "MongoDB",
       "Firebase",
+      "Cloudinary",
       "JWT",
       "Cookies",
       "Pusher",

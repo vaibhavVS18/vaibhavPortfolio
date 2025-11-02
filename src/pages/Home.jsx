@@ -6,6 +6,11 @@ import Contact from "../components/Contact";
 import Experience from "../components/Experience";
 
 export default function Home() {
+    useEffect(() => {
+      // fetch("https://codchat-jvsc.onrender.com").catch(() => {});
+      fetch("https://trueseller-q39b.onrender.com").catch(() => {});
+      // fetch("https://example3.com/api/check").catch(() => {});
+    }, []);
   return (
     <div className="mt-20">
       <Hero />
