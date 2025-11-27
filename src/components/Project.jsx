@@ -3,15 +3,21 @@ import { useNavigate ,Link} from "react-router-dom";
 import { PROJECTS } from "../constants/";
 import {FiExternalLink} from "react-icons/fi";
 import {FaGithub} from "react-icons/fa";
+import {motion} from "framer-motion";
 
 const Project = () => {
   // const navigate = useNavigate();
 
   return (
     <div className="pb-4 border-t scroll-mt-18" id="projects">
-      <h2 className="my-10 text-center text-4xl font-semibold">
-        Projects
-      </h2>
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -60 }}
+        transition={{ duration: 1.5 }}
+        className="my-10 text-center text-4xl font-semibold"
+      >
+          Projects
+      </motion.h2>
 
       <div>
         {PROJECTS.map((project, index) => (

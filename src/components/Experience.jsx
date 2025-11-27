@@ -2,11 +2,19 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { EXPERIENCES } from "../constants/";
 import {FiExternalLink} from "react-icons/fi";
+import {motion} from "framer-motion";
 
 const Experience = () => {
   return (
     <div className="pb-4 border-t scroll-mt-18" id="experiences">
-      <h2 className="my-10 text-center text-4xl font-semibold">Experiences</h2>
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -60 }}
+        transition={{ duration: 1.5 }}
+        className="my-10 text-center text-4xl font-semibold"
+        >
+          Experiences
+        </motion.h2>
 
       <div>
         {EXPERIENCES.map((exp, index) => (

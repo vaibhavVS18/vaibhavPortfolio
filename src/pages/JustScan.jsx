@@ -19,7 +19,7 @@ const JustScan = () => {
   }
 
   return (
-    <div className="min-h-screen p-2 flex flex-col sm:flex-row gap-8">
+    <div className="min-h-screen p-2 flex flex-col sm:flex-row gap-8 mt-20">
       {/* Title */}
 
       <div className="p-2 flex-1">

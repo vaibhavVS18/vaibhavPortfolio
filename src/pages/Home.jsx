@@ -7,9 +7,8 @@ import Experience from "../components/Experience";
 
 export default function Home() {
     useEffect(() => {
-      fetch("https://codchat-jvsc.onrender.com").catch(() => {});
-      fetch("https://trueseller-q39b.onrender.com").catch(() => {});
-      // fetch("https://example3.com/api/check").catch(() => {});
+      fetch("https://trueseller-q39b.onrender.com");
+      fetch("https://codchat-jvsc.onrender.com");
     }, []);
   return (
     <div className="mt-20">
