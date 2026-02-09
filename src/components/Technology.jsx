@@ -50,7 +50,7 @@ const Technology = () => {
 
   return (
     <div id="skills" className="pb-24 border-t scroll-mt-18">
-      
+
       {/* MAIN HEADING */}
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
@@ -73,35 +73,35 @@ const Technology = () => {
         </div>
 
         <p className="max-w-3xl text-sm sm:text-base text-gray-400 mb-4">
-          • <span className="text-gray-200 font-medium">400+ Problems Solved</span> on LeetCode  
-          <br />• <span className="text-gray-200 font-medium">Level 7 (200+ Problems Solved in 2024)</span> on Coding Ninjas Platform  
+          • <span className="text-gray-200 font-medium">600+ Problems Solved</span> on <span className="text-yellow-400 font-medium">LeetCode</span>
+          <br />• <span className="text-gray-200 font-medium">Level 7 (200+ Problems Solved in 2024)</span> on <span className="text-yellow-400 font-medium">Coding Ninjas Platform</span>
           <br />• Strong understanding of <span className="text-gray-200">Arrays, Linked Lists, Trees, Graphs, Dynamic Programming, and STL</span>
         </p>
 
-        <div className="flex flex-col md:flex-row gap-5 md:gap-6 justify-center items-center mt-2">
-          <div className="flex gap-1 items-center justify-center">
-            <SiLeetcode className="text-2xl text-orange-400"/> 
-            <a
-              href="https://leetcode.com/u/VaibhavSharma_IIIT/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-purple-400 hover:text-purple-300 hover:underline"
-            >
+        <div className="flex flex-col md:flex-row gap-5 md:gap-6 justify-center items-center mt-4">
+          <a
+            href="https://leetcode.com/u/VaibhavSharma_IIIT/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 border border-stone-500 rounded-full hover:bg-stone-800 hover:border-purple-400 transition-all duration-300 group"
+          >
+            <SiLeetcode className="text-2xl text-orange-400 group-hover:scale-110 transition-transform" />
+            <span className="text-sm font-medium text-stone-300 group-hover:text-purple-400">
               View LeetCode Profile
-            </a>
-          </div>
+            </span>
+          </a>
 
-          <div className="flex gap-1 items-center justify-center">
-            <SiCodingninjas className="text-lg text-orange-300"/>
-            <a
-              href="https://www.naukri.com/code360/profile/d95b90e0-c06d-4850-a706-a8f87c85e988"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-purple-400 hover:text-purple-300 hover:underline"
-            >
+          <a
+            href="https://www.naukri.com/code360/profile/d95b90e0-c06d-4850-a706-a8f87c85e988"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 border border-stone-500 rounded-full hover:bg-stone-800 hover:border-purple-400 transition-all duration-300 group"
+          >
+            <SiCodingninjas className="text-lg text-orange-300 group-hover:scale-110 transition-transform" />
+            <span className="text-sm font-medium text-stone-300 group-hover:text-purple-400">
               View Coding Ninjas Profile
-            </a>
-          </div>
+            </span>
+          </a>
         </div>
       </div>
 

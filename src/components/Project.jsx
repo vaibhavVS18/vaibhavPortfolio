@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { useNavigate ,Link} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { PROJECTS } from "../constants/";
-import {FiExternalLink} from "react-icons/fi";
-import {FaGithub} from "react-icons/fa";
-import {motion} from "framer-motion";
+import { FiExternalLink } from "react-icons/fi";
+import { FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Project = () => {
   // const navigate = useNavigate();
@@ -16,7 +16,7 @@ const Project = () => {
         transition={{ duration: 1.5 }}
         className="my-10 text-center text-4xl font-semibold"
       >
-          Projects
+        Projects
       </motion.h2>
 
       <div>
@@ -27,27 +27,13 @@ const Project = () => {
           >
             {/* Project Image */}
             <div className="flex justify-center items-center w-full lg:w-1/4">
-              {project.link !== "/justScan" ? (
-                <a href={project.link} target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="mb-6 rounded shadow-lg sm:w-45 w-30 hover:scale-105 transition-transform duration-300"
-                  />
-                </a>
-              ):
-              (
-                <Link 
-                  to={`${project.link}`}
-                >
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="mb-6 rounded shadow-lg sm:w-50 w-44 hover:scale-105 transition-transform duration-300"
-                  />
-                </Link>
-              )
-              }
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="mb-6 rounded shadow-lg sm:w-45 w-30 hover:scale-105 transition-transform duration-300"
+                />
+              </a>
 
             </div>
 
@@ -57,33 +43,17 @@ const Project = () => {
 
               {project.link && (
                 <div className="flex justify-center">
-                  {
-                  project.link !== "/justScan" ? (
-                    <div className="flex gap-1 items-center justify-center">
-                      <FiExternalLink/>
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-400 hover:text-purple-300 hover:underline"
-                      >
-                        View Project
-                      </a>
-                    </div>
-
-                  ):
-                  (
                   <div className="flex gap-1 items-center justify-center">
-                  <FiExternalLink/>
-                    <Link
-                      to={`${project.link}`}
+                    <FiExternalLink />
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-purple-400 hover:text-purple-300 hover:underline"
                     >
                       View Project
-                    </Link>
+                    </a>
                   </div>
-                  )
-                }
                 </div>
               )}
 
@@ -102,26 +72,26 @@ const Project = () => {
                 ))}
               </div>
 
-              
-            {/* See Project Link */}
-            <div className="flex justify-between sm: mt-2">
+
+              {/* See Project Link */}
+              <div className="flex justify-between sm: mt-2">
 
 
-              {project.githubLink && (
-                <div className="flex gap-1 items-center justify-center">
-                <FaGithub/>
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-purple-400 hover:text-purple-300 hover:underline"
-                  >
-                    GitHub Repository
-                  </a>
-                </div>
-              )}
+                {project.githubLink && (
+                  <div className="flex gap-1 items-center justify-center">
+                    <FaGithub />
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-purple-400 hover:text-purple-300 hover:underline"
+                    >
+                      GitHub Repository
+                    </a>
+                  </div>
+                )}
 
-            </div>
+              </div>
 
             </div>
           </div>
@@ -138,9 +108,8 @@ const Description = ({ text, link }) => {
   return (
     <div>
       <p
-        className={`text-stone-400 overflow-hidden ${
-          showMore ? "" : "line-clamp-5"
-        }`}
+        className={`text-stone-400 overflow-hidden ${showMore ? "" : "line-clamp-5"
+          }`}
       >
         {text}
       </p>

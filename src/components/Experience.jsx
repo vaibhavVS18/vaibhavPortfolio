@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { EXPERIENCES } from "../constants/";
-import {FiExternalLink} from "react-icons/fi";
-import {motion} from "framer-motion";
+import { FiExternalLink } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
@@ -12,9 +12,9 @@ const Experience = () => {
         initial={{ opacity: 0, y: -60 }}
         transition={{ duration: 1.5 }}
         className="my-10 text-center text-4xl font-semibold"
-        >
-          Experiences
-        </motion.h2>
+      >
+        Experiences
+      </motion.h2>
 
       <div>
         {EXPERIENCES.map((exp, index) => (
@@ -68,7 +68,7 @@ const Experience = () => {
 
                 {exp.certificate && (
                   <div className="flex gap-1 items-center justify-center">
-                  <FiExternalLink/>
+                    <FiExternalLink />
                     <a
                       href={exp.certificate}
                       target="_blank"
@@ -80,9 +80,23 @@ const Experience = () => {
                   </div>
                 )}
 
+                {exp.offerLetter && (
+                  <div className="flex gap-1 items-center justify-center">
+                    <FiExternalLink />
+                    <a
+                      href={exp.offerLetter}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-purple-400 hover:text-purple-300 hover:underline"
+                    >
+                      Offer Letter
+                    </a>
+                  </div>
+                )}
+
                 {exp.link && (
                   <div className="flex gap-1 items-center justify-center">
-                  <FiExternalLink/>
+                    <FiExternalLink />
                     <a
                       href={exp.link}
                       target="_blank"
@@ -109,9 +123,8 @@ const Description = ({ text }) => {
   return (
     <div>
       <p
-        className={`text-stone-400 overflow-hidden ${
-          showMore ? "" : "line-clamp-5"
-        }`}
+        className={`text-stone-400 overflow-hidden whitespace-pre-line ${showMore ? "" : "line-clamp-5"
+          }`}
       >
         {text}
       </p>

@@ -41,7 +41,7 @@ const Hero = () => {
         <div className="w-full lg:w-1/2">
           <div className="flex justify-center lg:p-8">
             <motion.div
-              className="relative bg-gradient-to-br from-black/20 to-[#291459]/30 backdrop-blur-md border border-white/50 rounded-3xl p-12 w-96 h-[500px] overflow-hidden flex flex-col items-center justify-center text-center"
+              className="relative bg-gradient-to-br from-black/20 to-[#291459]/30 backdrop-blur-md border border-white/50 rounded-3xl p-6 md:p-12 w-96 min-h-[500px] h-auto overflow-hidden flex flex-col items-center justify-center text-center"
               initial={{ scale: 0.8, opacity: 0, rotateY: -15 }}
               animate={{ scale: 1, opacity: 1, rotateY: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
@@ -73,7 +73,7 @@ const Hero = () => {
               </h3>
 
               <p className="text-white/80 text-base mb-4 font-medium">
-                Undergrad @ IIIT Una • Full Stack Developer • C++ / DSA Enthusiast
+                Prefinal Year Student @ IIIT Una, ECE | Full Stack Developer @YesCity , @SatviSolutions | proficient in solving DSA problems in C++
               </p>
 
               <p className="text-white/60 text-sm mb-6 leading-relaxed max-w-xs">
@@ -81,17 +81,17 @@ const Hero = () => {
                 complex problems through efficient code.
               </p>
 
-                <a
-                  href="https://www.linkedin.com/in/vaibhav-sharma-90619a291/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="z-10"
-                >
-                  <button className="relative z-10 flex items-center gap-2 px-8 py-2.5 bg-white/20 hover:bg-white/30 border border-white/30 text-white rounded-lg text-sm font-medium transition-all duration-300 hover:scale-105 shadow-lg cursor-pointer">
-                    <FaLinkedin className="text-xl" />
-                    View Profile
-                  </button>
-                </a>
+              <a
+                href="https://www.linkedin.com/in/vaibhav-sharma-90619a291/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="z-10"
+              >
+                <button className="relative z-10 flex items-center gap-2 px-8 py-2.5 bg-white/20 hover:bg-white/30 border border-white/30 text-white rounded-lg text-sm font-medium transition-all duration-300 hover:scale-105 shadow-lg cursor-pointer">
+                  <FaLinkedin className="text-xl" />
+                  View Profile
+                </button>
+              </a>
             </motion.div>
           </div>
         </div>
@@ -122,9 +122,8 @@ const Hero = () => {
             <motion.p
               variants={childVariants}
               className="my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter"
-            >
-              {HERO_CONTENT}
-            </motion.p>
+              dangerouslySetInnerHTML={{ __html: HERO_CONTENT }}
+            />
             <motion.a
               variants={childVariants}
               href="/Vaibhav_Resume.pdf"
