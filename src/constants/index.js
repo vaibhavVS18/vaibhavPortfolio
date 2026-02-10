@@ -5,6 +5,7 @@ import logo from "../assets/logo.png"
 import yesCityLogo from "../assets/projects/yesCityLogo.png"
 import yesLogo from "../assets/projects/yesLogo.png"
 import satviLogo from "../assets/projects/satvi.png"
+import fixMyLocalityLogo from "../assets/projects/fix_my_locality.png"
 
 // Hero section about you
 export const HERO_CONTENT = `I’m Vaibhav Sharma, a Full Stack Developer and proficient in solving DSA problems in C++. I am currently <span class="text-blue-200 tracking-tight font-medium">working as a stipend-based Full Stack Intern at Satvi Solutions and serving as the Tech Team Lead at YesCity</span>, where I manage production builds and review code contributions from other interns. Specializing in the MERN stack, Next.js, and Python (FastAPI), I combine a strong algorithmic foundation in <span class="text-blue-200 tracking-tight font-medium">DSA (1000+ problems solved)</span> with a product-first mindset to build high-performance applications—from real-time collaboration platforms to smart entry systems—seamlessly blending efficiency with user experience.`;
@@ -42,7 +43,7 @@ export const HERO_CONTENT = `I’m Vaibhav Sharma, a Full Stack Developer and pr
 // Your work experiences
 export const EXPERIENCES = [
 
-    {
+  {
     title: "YesCity – Travel Assistance Platform",
     year: "Jul - Dec 2025 (5 months)",
     image: yesLogo,
@@ -123,16 +124,25 @@ export const PROJECTS = [
     link: "https://trueseller.vercel.app/",
     githubLink: "https://github.com/vaibhavVS18/TrueSeller"
 
+  },
+  {
+    title: "Fix My Locality – Civic Issue Management Platform",
+    image: fixMyLocalityLogo,
+    description:
+      "A comprehensive civic issue reporting and management platform connecting citizens, workers, and administrators. It features secure phone-based OTP authentication, GPS-enabled complaint reporting with photo evidence, real-time status tracking, and role-based dashboards for workers and admins. The platform streamlines civic problem resolution with an efficient assignment and tracking system.",
+    technologies: [
+      "React 19",
+      "Tailwind CSS 4",
+      "Node.js",
+      "Express.js 5",
+      "MongoDB",
+      "Twilio OTP",
+      "Google GenAI"
+    ],
+    link: "https://fix-my-locality.vercel.app",
+    githubLink: "https://github.com/Yaswantsoni1128/fix-my-locality",
+    isGroup: true
   }
-  // {
-  //   title: "My Portfolio",
-  //   image: logo,
-  //   description:
-  //     "It is Personal portfolio website showcasing my projects, skills, and contact information.",
-  //   technologies: ["React", "TailwindCSS", "JavaScript"],
-  //   githubLink: "https://github.com/vaibhavVS18/vaibhavPortfolio"
-  // },
-
 ];
 
 // Contact section - empty for privacy

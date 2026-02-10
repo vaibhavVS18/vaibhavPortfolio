@@ -23,15 +23,25 @@ const Project = () => {
         {PROJECTS.map((project, index) => (
           <div
             key={index}
-            className="mb-5 flex flex-wrap lg:justify-center items-center p-4 shadow-lg hover:shadow-2xl transition-shadow duration-300 rounded-lg"
+            className="mb-5 flex flex-wrap lg:justify-center items-center p-4 shadow-lg hover:shadow-2xl transition-shadow duration-300 rounded-lg relative"
           >
+            {project.isGroup && (
+              <div className="w-full flex items-center justify-center mb-6">
+                <div className="h-[1px] bg-stone-600 w-16 md:w-56"></div>
+                <span className="mx-3 text-stone-400 text-xs sm:text-sm uppercase tracking-wider font-semibold">
+                  Group Project
+                </span>
+                <div className="h-[1px] bg-stone-600 w-16 md:w-56"></div>
+              </div>
+            )}
             {/* Project Image */}
             <div className="flex justify-center items-center w-full lg:w-1/4">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="mb-6 rounded shadow-lg sm:w-45 w-30 hover:scale-105 transition-transform duration-300"
+                  className={`mb-6 shadow-lg sm:w-45 w-30 hover:scale-105 transition-transform duration-300 ${project.isGroup ? "rounded-full" : "rounded"
+                    }`}
                 />
               </a>
 
