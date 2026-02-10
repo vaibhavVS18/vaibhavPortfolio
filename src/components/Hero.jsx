@@ -105,12 +105,12 @@ const Hero = () => {
             variants={containerVariants}
             className="flex flex-col items-center lg:items-start mt-10"
           >
-            <motion.h2
+            <motion.h1
               variants={childVariants}
               className="pb-2 text-4xl tracking-tighter lg:text-8xl"
             >
               Vaibhav sharma
-            </motion.h2>
+            </motion.h1>
             <motion.span
               variants={childVariants}
               className="bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-500 bg-clip-text 
