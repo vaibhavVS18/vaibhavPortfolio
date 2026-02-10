@@ -3,6 +3,7 @@ import { HERO_CONTENT } from "../constants";
 import { motion } from "framer-motion";
 import profileImage from "../assets/profile.jpeg";
 import { FaLinkedin } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 
 const containerVariants = {
   hidden: {
@@ -35,7 +36,7 @@ const childVariants = {
 
 const Hero = () => {
   return (
-    <div className="pb-4 lg:mb-36">
+    <div className="pb-4 lg:mb-20">
       {/* hero div */}
       <div className="flex flex-wrap lg:flex-row-reverse">
         <div className="w-full lg:w-1/2">
@@ -121,18 +122,18 @@ const Hero = () => {
 
             <motion.p
               variants={childVariants}
-              className="my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter"
+              className="my-2 max-w-lg py-5 text-xl leading-relaxed tracking-tighter"
               dangerouslySetInnerHTML={{ __html: HERO_CONTENT }}
             />
             <motion.a
               variants={childVariants}
-              href="/Vaibhav_Resume.pdf"
+              href="https://drive.google.com/file/d/1t6hP5woNmy7qw1j0pYJSFczTafvqjZ6b/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              download
-              className="bg-white rounded-full p-4 text-sm text-stone-800 mb-10"
+              className="bg-white rounded-full p-4 text-sm text-stone-800 mb-0 flex items-center gap-2"
             >
-              Download Resume
+              <FiExternalLink />
+              See my Resume
             </motion.a>
           </motion.div>
         </div>
