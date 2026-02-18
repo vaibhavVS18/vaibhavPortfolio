@@ -74,7 +74,7 @@ export const EXPERIENCES = [
     image: satviLogo,
     role: "Full Stack Development Intern",
     company: "Satvi Solutions",
-    description: `• Joining as a stipend-based Full Stack Development at SatviSoultions based in the USA, focusing on product ratings and comparisons using a Clapscore-based model.
+    description: `• Joining as a stipend-based Full Stack Developer intern at SatviSoultions based in the USA, focusing on product ratings and comparisons using a Clapscore-based model.
 • Implementing Amazon PA or Creators API and Google Shopping reviews integration to aggregate and display product ratings.
 • Developing data scraping solutions for fetching product reviews from allowed platforms.
 • Building the frontend using React, Tailwind CSS, and Nodemailer, and developing the backend using FastAPI (Python).`,
