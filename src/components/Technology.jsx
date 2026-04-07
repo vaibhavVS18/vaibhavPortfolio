@@ -73,7 +73,7 @@ const Technology = () => {
         </div>
 
         <p className="max-w-3xl text-sm sm:text-base text-gray-400 mb-4">
-          • <span className="text-gray-200 font-medium">600+ Problems Solved</span> on <span className="text-yellow-400 font-medium">LeetCode</span>
+          • <span className="text-gray-200 font-medium">700+ Problems Solved</span> on <span className="text-yellow-400 font-medium">LeetCode</span>
           <br />• <span className="text-gray-200 font-medium">Level 7 (200+ Problems Solved in 2024)</span> on <span className="text-yellow-400 font-medium">Coding Ninjas Platform</span>
           <br />• Strong understanding of <span className="text-gray-200">Arrays, Linked Lists, Trees, Graphs, Dynamic Programming, and STL</span>
         </p>
