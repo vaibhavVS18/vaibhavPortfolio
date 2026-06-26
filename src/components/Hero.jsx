@@ -127,7 +127,7 @@ const Hero = () => {
             />
             <motion.a
               variants={childVariants}
-              href="https://drive.google.com/file/d/1ejJe5FvTL1x4R5hM_RHqHmoXY431gLxK/view?usp=sharing"
+              href="https://drive.google.com/file/d/1__NiMSOqF42goAtK0Aow6pvosa6qSZXJ/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white rounded-full p-4 text-sm text-stone-800 mb-0 flex items-center gap-2"
